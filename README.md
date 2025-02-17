@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Overview
 
-## Getting Started
+This project is a dynamic multi-step form built using Next.js 15.x with the App Router and React 19.x. The form is flexible, allowing customization of steps, fields, and validation rules. It integrates with shadcn/ui, Tailwind CSS, and Framer Motion for a smooth and modern UI.
 
-First, run the development server:
+# ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Dynamic Step Management – Easily configure steps and fields.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Validation Support – Uses Biome for validation.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+State Management – Handles form data seamlessly across steps.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Animations – Smooth transitions using Framer Motion.
 
-## Learn More
+Custom Theming – Styled with Tailwind CSS and shadcn/ui.
 
-To learn more about Next.js, take a look at the following resources:
+# 📦 Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Framework: Next.js 15.x (App Router)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Styling: Tailwind CSS
 
-## Deploy on Vercel
+State Management: React Hooks
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Validation: Biome 1.9.4
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Animations: Framer Motion
+
+# 🛠 Installation & Setup
+
+# Clone the repository
+git clone https://github.com/your-repo/nextjs-multistep-form.git
+
+# Navigate to the project folder
+cd nextjs-multistep-form
+
+# Install dependencies
+npm install  # or yarn install
+
+# Run the development server
+npm run dev  # or yarn dev
+
+# ⚙️ Configuration
+
+Customize form steps in config.ts:
+
+export const formSteps = [
+  { id: 'step1', label: 'Personal Info', fields: ['name', 'email'] },
+  { id: 'step2', label: 'Address', fields: ['country', 'state', 'city'] },
+  { id: 'step3', label: 'Review & Submit' },
+];
+
+# 🎨 Theming & Customization
+
+Modify the Tailwind theme in tailwind.config.js or override styles in globals.css.
+
+
+# 📌 Roadmap
+
+✅ Basic multi-step form setup
+
+✅ Dynamic step rendering
+
+✅ Form validation with Biome
+
+🚀 API integration for form submission
+
+🚀 Database storage & authentication
+
+#📄 License
+
+MIT License.
+
+💡 Contributions are welcome! Feel free to fork, improve, and submit PRs. 🚀
