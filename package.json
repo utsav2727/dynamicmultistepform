@@ -1,32 +1,35 @@
 {
-  "name": "dynamicmultistepform",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@utsav2727/dynamic-multi-step-form": "file:../multistepformpackage/utsav2727-dynamic-multi-step-form-1.0.0.tgz",
-    "biome": "^0.3.3",
-    "framer-motion": "^12.4.2",
-    "libphonenumber-js": "^1.11.19",
-    "next": "15.1.7",
-    "react": "^19.0.0",
-    "react-country-state-city": "^1.1.11",
-    "react-dom": "^19.0.0",
-    "react-phone-number-input": "^3.4.11",
-    "react-select": "^5.10.0",
-    "shadcn-ui": "^0.9.4"
-  },
-  "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5"
-  }
+	"name": "dynamicmultistepform",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev --turbopack",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"biome:lint": "biome lint .",
+		"biome:format": "biome format . --write"
+	},
+	"dependencies": {
+		"@utsav2727/dynamic-multi-step-form": "file:../multistepformpackage/utsav2727-dynamic-multi-step-form-1.0.0.tgz",
+		"biome": "^0.3.3",
+		"framer-motion": "^12.4.2",
+		"libphonenumber-js": "^1.11.19",
+		"next": "15.1.7",
+		"react": "^19.0.0",
+		"react-country-state-city": "^1.1.11",
+		"react-dom": "^19.0.0",
+		"react-phone-number-input": "^3.4.11",
+		"react-select": "^5.10.0",
+		"shadcn-ui": "^0.9.4"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"@types/node": "^20",
+		"@types/react": "^19",
+		"@types/react-dom": "^19",
+		"postcss": "^8",
+		"tailwindcss": "^3.4.1",
+		"typescript": "^5"
+	}
 }
